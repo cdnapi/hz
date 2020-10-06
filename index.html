@@ -1,0 +1,53 @@
+<html data-dpr="1" style="font-size: 40px;">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>临沂惠志客服页面</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div style="padding-top: 30px;">
+        <center>
+            <img src="./ewm.png">
+            <div class="btn">
+                <a><span>长按识别二维码加客服微信</span></a>
+            </div>
+        </center>
+    </div>
+    <div class="lz" style="margin-top: 10px;">
+        <center><a href="http://widsn-35.pospal.cn/m/" target="_blank"><button class="button" style="padding-left: 64px;padding-right: 64px;">官网</button></a>
+        <a href="tel:13583972125" target="_blank"><button class="button drive white" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">点我直接拨打电话</button></a>
+		<span id="btn" data-clipboard-text="13583972125"><button class="button drive RED" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">13583972125</a></button></span>
+		
+<div id="show" style="display: none;">已复制号码</div>
+<script>
+	var btn=document.getElementById('btn');
+	var clipboard=new Clipboard(btn);
+	clipboard.on('success', function(e){
+		$('#show').slideDown().delay(1500).slideUp(300);
+		console.log(e);
+	});
+	clipboard.on('error', function(e){
+		$('#show').slideDown().delay(1500).slideUp(300);
+		console.log(e);
+	});
+</script>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=1984722071&site=%E7%A7%91%E5%AD%A6%E5%88%80&menu=yes&from=discuz" target="_blank"><button class="button smoke dark" style="padding-left: 59px;padding-right: 59px;">点我加客服QQ</button></a></center>
+    </div>
+    <footer>
+        <h2 style="color: #6f6f6f;"><center>© 2020 <a href="http://widsn-35.pospal.cn/m/" target="_blank" style="color: #6f6f6f;">惠志智能电子</a></center></h2>
+    </footer>
+
+<script>
+    $('.button').html((i, html) => {
+        return '<span><i>' + $.trim(html).split('').join('</i><i>') + '</i></span>';
+    });
+</script>
+</body>
+</html>
