@@ -21,19 +21,19 @@
         </center>
     </div>
     <div class="lz" style="margin-top: 10px;">
-        <center><a href="http://widsn-35.pospal.cn/m/" target="_blank"><button class="button" style="padding-left: 64px;padding-right: 64px;">官网</button></a>
+        <center><a href="http://widsn-35.pospal.cn/m/" target="_blank"><button class="button" style="padding-left: 64px;padding-right: 64px;">微商城</button></a>
         <a href="tel:13583972125" target="_blank"><button class="button drive white" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">点我直接拨打电话</button></a>
-		<span id="btn" data-clipboard-text="13583972125"><button class="button drive RED" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">13583972125</a></button></span>
+		<span id="btn" data-clipboard-text="13583972125"><button class="button drive RED" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">点我复制手机（微信）13583972125</a></button></span>
 		
-<div id="show" style="display: none;">已复制号码</div>
+<div id="show" style="display: none;">已复制手机（微信）号码，粘贴板没有内容请手动复制</div>
 
-     <span id="btn" data-clipboard-text="1984722071"><button class="button drive RED" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">点我复制QQ1984722071</a></button></span>
+		<span id="bt" data-clipboard-text="1984722071"><button class="button drive good" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">点我复制QQ1984722071</a></button></span>
 		
-<div id="show" style="display: none;">已复制号码</div>
+<div id="sh" style="display: none;">已复制，请打开QQ，粘贴板没有内容请手动复制</div>
 
 	<script>
 	var btn=document.getElementById('btn');
-	var clipboard=new Clipboard(btn);
+	var clipboard=new Clipboard(btn,bt);
 	clipboard.on('success', function(e){
 		$('#show').slideDown().delay(1500).slideUp(300);
 		console.log(e);
@@ -42,7 +42,20 @@
 		$('#show').slideDown().delay(1500).slideUp(300);
 		console.log(e);
 	});
+	var btn=document.getElementById('bt');
+	var clipboard=new Clipboard(bt);
+	clipboard.on('success', function(e){
+		$('#sh').slideDown().delay(1500).slideUp(300);
+		console.log(e);
+	});
+	clipboard.on('error', function(e){
+		$('#sh').slideDown().delay(1500).slideUp(300);
+		console.log(e);
+	});
 </script>
+
+
+</center>
     <footer>
         <h2 style="color: #6f6f6f;"><center>© 2020 <a href="http://widsn-35.pospal.cn/m/" target="_blank" style="color: #6f6f6f;">惠志智能电子</a></center></h2>
     </footer>
