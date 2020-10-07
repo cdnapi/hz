@@ -20,6 +20,11 @@ a {
     --shadow: 0 2px 8px -1px rgba(21, 25, 36, 0.32);
     --shadow-hover: 0 4px 20px -2px rgba(21, 25, 36, 0.5);
 }
+.button.good {
+    --background: #2F4589;
+    --shadow: 0 2px 8px -1px rgba(21, 44, 36, 0.32);
+    --shadow-hover: 0 4px 20px -2px rgba(21, 55, 36, 0.5);
+}
 .button.white {
     --background: #673ab7;
     --text: #fff;
