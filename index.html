@@ -31,6 +31,14 @@
 		
 <div id="sh" style="display: none;">已复制，请打开QQ，粘贴板没有内容请手动复制</div>
 
+        <a href="tel:15725775558" target="_blank"><button class="button drive white" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">点我直接拨打售后热线</button></a>
+		<span id="sh" data-clipboard-text="15725775558"><button class="button drive RED" style="padding-left: 64px;padding-right: 64px;margin-top: 10px;margin-bottom: 10px;">点我复制售后手机（微信）15725775558</a></button></span>
+		
+<div id="s" style="display: none;">已复制手机（微信）号码，粘贴板没有内容请手动复制</div>
+
+
+
+
 	<script>
 	var btn=document.getElementById('btn');
 	var clipboard=new Clipboard(btn,bt);
@@ -50,6 +58,16 @@
 	});
 	clipboard.on('error', function(e){
 		$('#sh').slideDown().delay(2000).slideUp(500);
+		console.log(e);
+	});
+	var btn=document.getElementById('sh');
+	var clipboard=new Clipboard(sh);
+	clipboard.on('success', function(e){
+		$('#s').slideDown().delay(2000).slideUp(500);
+		console.log(e);
+	});
+	clipboard.on('error', function(e){
+		$('#s').slideDown().delay(2000).slideUp(500);
 		console.log(e);
 	});
 </script>
