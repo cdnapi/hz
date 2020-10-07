@@ -35,21 +35,21 @@
 	var btn=document.getElementById('btn');
 	var clipboard=new Clipboard(btn,bt);
 	clipboard.on('success', function(e){
-		$('#show').slideDown().delay(1500).slideUp(300);
+		$('#show').slideDown().delay(2000).slideUp(500);
 		console.log(e);
 	});
 	clipboard.on('error', function(e){
-		$('#show').slideDown().delay(1500).slideUp(300);
+		$('#show').slideDown().delay(2000).slideUp(500);
 		console.log(e);
 	});
 	var btn=document.getElementById('bt');
 	var clipboard=new Clipboard(bt);
 	clipboard.on('success', function(e){
-		$('#sh').slideDown().delay(1500).slideUp(300);
+		$('#sh').slideDown().delay(2000).slideUp(500);
 		console.log(e);
 	});
 	clipboard.on('error', function(e){
-		$('#sh').slideDown().delay(1500).slideUp(300);
+		$('#sh').slideDown().delay(2000).slideUp(500);
 		console.log(e);
 	});
 </script>
